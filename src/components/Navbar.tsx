@@ -18,12 +18,9 @@ const Navbar = () => {
           <Link to="/products" className={`hover:text-primary transition-colors duration-300 ${isActive("/products") ? "text-primary" : ""}`}>
             Parfümler
           </Link>
-          <a href={isActive("/") ? "#about" : "/#about"} className="hover:text-primary transition-colors duration-300">
+          <Link to="/about" className={`hover:text-primary transition-colors duration-300 ${isActive("/about") ? "text-primary" : ""}`}>
             Hakkımızda
-          </a>
-          <a href={isActive("/") ? "#contact" : "/#contact"} className="hover:text-primary transition-colors duration-300">
-            İletişim
-          </a>
+          </Link>
         </div>
         <Link
           to="/products"
