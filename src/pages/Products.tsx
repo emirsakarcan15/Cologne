@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import SpotlightCard from "@/components/SpotlightCard";
 import FadeContent from "@/components/FadeContent";
 import BlurText from "@/components/BlurText";
+import ContactSection from "@/components/ContactSection";
 
 import perfume1 from "@/assets/perfume-1.jpg";
 import perfume2 from "@/assets/perfume-2.jpg";
@@ -123,6 +124,7 @@ const Products = () => (
         </div>
       </div>
     </section>
+    <ContactSection />
     <Footer />
   </div>
 );
