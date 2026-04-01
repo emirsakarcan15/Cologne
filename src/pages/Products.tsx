@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import SpotlightCard from "@/components/SpotlightCard";
 import FadeContent from "@/components/FadeContent";
 import BlurText from "@/components/BlurText";
-import ContactSection from "@/components/ContactSection";
 
 import perfume1 from "@/assets/perfume-1.jpg";
 import perfume2 from "@/assets/perfume-2.jpg";
@@ -21,6 +20,7 @@ const products = [
     price: "₺2.450",
     size: "100ml",
     image: perfume1,
+    rgba: "rgba(191, 155, 48, 0.38)"
   },
   {
     name: "Bleu Profond",
@@ -30,6 +30,7 @@ const products = [
     price: "₺1.890",
     size: "75ml",
     image: perfume2,
+    rgba: "rgba(39, 49, 245, 1)"
   },
   {
     name: "Rose Éternelle",
@@ -39,6 +40,7 @@ const products = [
     price: "₺2.150",
     size: "100ml",
     image: perfume3,
+    rgba: "rgba(227, 0, 142, 0.88)"
   },
   {
     name: "Mystère Violet",
@@ -48,6 +50,7 @@ const products = [
     price: "₺3.200",
     size: "50ml",
     image: perfume4,
+    rgba: "rgba(156, 0, 227, 1)"
   },
   {
     name: "Jardin Vert",
@@ -57,6 +60,7 @@ const products = [
     price: "₺1.650",
     size: "125ml",
     image: perfume5,
+    rgba: "rgba(0, 227, 8, 1)"
   },
   {
     name: "Blanc Absolu",
@@ -66,6 +70,7 @@ const products = [
     price: "₺2.750",
     size: "100ml",
     image: perfume6,
+    rgba: "rgba(255, 255, 255, 255)"
   },
 ];
 
@@ -91,7 +96,7 @@ const Products = () => (
             <FadeContent key={i} blur duration={800} delay={i * 100}>
               <SpotlightCard
                 className="bg-card border-border rounded-none p-0 overflow-hidden group h-full"
-                spotlightColor="rgba(191, 155, 48, 0.12)"
+                spotlightColor={product.rgba}
               >
                 <div className="aspect-[3/4] overflow-hidden">
                   <img
@@ -124,7 +129,6 @@ const Products = () => (
         </div>
       </div>
     </section>
-    <ContactSection />
     <Footer />
   </div>
 );
