@@ -25,7 +25,7 @@ const FeaturedSection = () => (
           <FadeContent key={i} blur duration={800} delay={i * 150}>
             <SpotlightCard
               className="bg-secondary border-border rounded-none p-0 overflow-hidden group cursor-pointer"
-              spotlightColor="rgba(191, 155, 48, 0.15)"
+              spotlightColor="rgba(191, 155, 48, 0.40)"
             >
               <div className="aspect-[3/4] overflow-hidden">
                 <img
